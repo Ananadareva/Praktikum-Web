@@ -1,0 +1,83 @@
+h1 {
+    display: flex;
+    color: silver;
+
+
+    font-size: 24px;
+
+    text-align: left;
+}
+
+
+nav {
+    background: linear-gradient(to right, rgb(128, 0, 128), rgb(75, 0, 130), rgb(138, 43, 226));
+
+    overflow: hidden;
+    display: flex;
+}
+
+
+
+ul {
+    display: flex;
+
+    margin-left: 70%;
+
+    list-style: none;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+
+}
+
+
+
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: white 10px solid;
+    border-end-end-radius: 50%; ;
+}
+
+
+h2 {
+    color: green;
+    text-align: center;
+}
+
+
+form {
+    text-align: center;
+}
+
+
+h3 {
+    color: red;
+    text-align: center;
+}
+
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+body{
+   
+    background: #f4f1ff;
+}
+
+#desc{
+    border: rgb(130, 3, 176) 5px solid;
+   
+}

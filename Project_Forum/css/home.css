@@ -1,0 +1,68 @@
+#createPost {
+    margin: auto;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+    max-width: 150px;
+    text-decoration: none;
+    background-color: white;
+}
+
+
+
+#imageProfile {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+#imagePost {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+.post-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px; 
+    margin: 0 auto; 
+    display: flex; 
+    margin-bottom: 20px;
+    flex-direction: column; 
+}
+
+.comments-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+
+.user-info {
+    display: flex;
+   
+    gap: 10px;
+}
+
+.post-header {
+    display: flex;
+    
+}
+
+
+.comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    max-width: 100%; /* Menggunakan maksimum lebar agar konten menyesuaikan container parentnya */
+}
