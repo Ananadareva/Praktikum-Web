@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/price.css">
+</head>
+
+<body>
+  <div class="form-box">
+  <form id="pesananFrom">
+    <table type="table">
+      <tr>
+        <th>Makanan</th>
+        <td>
+          <select id="makanan">
+            <option value="" selected disabled hidden>Pilih Makanan</option>
+            <option value="20000">Ayam bakar</option>
+            <option value="12000">Ikan Goreng</option>
+            <option value="5000">Nasi</option>
+            <option value="10000">Es Campur</option>
+          </select>
+
+        </td>
+      </tr>
+      <tr>
+        <th>Jumlah</th>
+        <td>
+          <input type="number" id="jumlah" placeholder="pcs" required />
+        </td>
+      </tr>
+      <tr>
+        <th>Voucher</th>
+        <td>
+          <input type="text" id="voucher" placeholder="Masukkan voucher" />
+
+        </td>
+      </tr>
+    </table>
+
+
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+
+  <hr />
+  <!-- Ouputnya-->
+  <div class="output-Box">
+    <h1>Pesanan Anda</h1>
+
+    <p>Makanan:</p> <span id="outputMakanan"></span><hr>
+    <p>Jumlah:</p> <span id="outputJumlah"></span> <hr>
+    <p>Voucher:</p> <span id="outputVoucher"></span> <hr>
+    <strong>Harga Normal:</strong> <span id="outputHargaSebelumDiskon"></span><hr>
+    <strong>Besaran Diskon: <span id="outputDiskon"></span></strong><hr>
+    <strong>Total:</strong> <span id="outputHargaSetelahDiskon"> </span><hr>
+
+  </div>
+
+
+
+</body>
+
+<script src="js/pricing.js"> </script>
+
+</html>
