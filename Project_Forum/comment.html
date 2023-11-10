@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komentar</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/comment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Forum Rumpi!</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Profil</a></li>
+
+
+
+            </ul>
+        </nav>
+    </header>
+    <!-- nanti isi comment nha dinamis dari db-->
+    <main>
+        <button type="button" class="modal-button" onclick="openModal('modal1')"> <i class="fa-solid fa-gear"></i>
+        </button>
+    
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <button type="button" class="close-button" onclick="closeModal('modal1')">˂</button>
+                <br>
+                <center>
+                    <h3>Pengaturan</h3>
+                    <button onclick="darkMode()">Mode Gelap</button>
+                </center>
+            </div>
+        </div>
+        
+        <script src="js/modal.js"></script>
+        <script>
+            applyDarkModePreference();
+        </script>
+        
+        <script src="js/darkmode.js"></script>
+
+        <section class="comments-section">
+            <h2>Komentar</h2>
+            <div class="comment">
+                <div class="comment-header">
+                    <img id="imageProfile" src="images/cthProfil.jpeg">
+                    <div class="comment-info">
+                        <div class="user-info">
+                            <h3>Username 1</h3>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>Waktu 1</p>
+                    <p>Komentar pengguna 1...</p>
+                </div>
+            </div>
+
+
+            <div class="comment">
+                <div class="comment-header">
+                    <img id="imageProfile" src="images/cthProfil.jpeg">
+                    <div class="comment-info">
+                        <div class="user-info">
+                            <h3>Username 2</h3>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment-content">
+                    <p>Waktu 2</p>
+                    <p>Komentar pengguna 2... Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum corrupti
+                        ullam, est veritatis quis beatae veniam repellat sapiente, odio eum quasi sint, quisquam
+                        repudiandae nulla sequi. Accusantium quod temporibus mollitia.</p>
+                </div>
+            </div>
+
+            </div>
+
+            <h2>Tambahkan Komentar</h2>
+            <form id="comment-form">
+
+                <label for="comment-content">Komentar Anda:</label>
+                <textarea id="comment-content" name="comment-content" rows="4" required></textarea><br>
+                <button type="submit">Kirim Komentar</button>
+            </form>
+        </section>
+
+        <div>
+            <a> Kembali ke postingan</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Forum Rumpi!</p>
+    </footer>
+
+</body>
+
+</html>
