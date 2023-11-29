@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Postingan Baru</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/createPost.css">
+</head>
+
+
+<body>
+
+
+
+    <header>
+        <h1>Forum Rumpi!</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Profil</a></li>
+
+            </ul>
+        </nav>
+
+        
+
+        <button  type="button" class="modal-button" onclick="openModal('modal1')"> <i
+            class="fa-solid fa-gear"></i>
+    </button>
+
+    </header>
+
+
+
+    <main>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <button type="button" class="close-button" onclick="closeModal('modal1')">˂</button>
+                <br>
+                <center> <br>
+                    <h3>Pengaturan</h3>
+                    <button onclick="darkMode()">Mode Gelap</button>
+                </center>
+            </div>
+        </div>
+
+        <script src="js/modal.js"></script>
+        <script>
+            applyDarkModePreference();
+        </script>
+
+        <script src="js/darkmode.js"></script>
+
+        <section class="post-section">
+            <div class="page-name">
+                <h2>Buat Postingan Baru</h2>
+            </div>
+
+            <div class="preview-image">
+                <img id="preview" src="images/cthPostImage.jpg" alt="Preview Image" />
+            </div>
+
+            <form id="post-form">
+                <label for="avatar">Tambah Gambar/ video:</label>
+                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg, video/mp4" />
+
+                <label for="post-title">Tambah Caption:</label>
+                <input type="text" id="post-title" name="post-title" required>
+                <label for="post-content">Deskripsi:</label>
+                <textarea id="post-content" name="post-content" rows="4" required></textarea>
+                <button id="submitPostBtn" type="submit">Kirim Postingan</button>
+            </form>
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+        <p>&copy; 2023 Forum Rumpi!</p>
+
+
+    </footer>
+</body>
+
+</html>
