@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button type="button" class="modal-button" onclick="openModal('modal1')"> ˃
+        </button>
+
+
+    <!-- Modal RejMsg -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <button type="button" class="close-button" onclick="closeModal('modal1')">˂</button>
+            <h3>Edit Profil</h3>
+
+
+            
+        </div>
+    </div>
+    <script src="js/editProfilPopUp.js"></script>
+
+    <style>
+        #modal1 {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            left: 0;
+            top: 0;
+            width: 300px;
+            height: 90%;
+            overflow: auto;
+
+            background-color: white;
+        }
+    
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid #888;
+            width: 80%;
+            height: 80%;
+        }
+    
+        /* The Close Button */
+        .close-button {
+            color: #aaaaaa;
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</body>
+
+
+</html>
